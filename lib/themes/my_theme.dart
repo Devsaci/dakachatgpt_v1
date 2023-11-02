@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 
 class MyTheme{
-  static ThemeData themeData() {
-    // TODO: implement themeData
-    throw UnimplementedError();
+  static ThemeData themeData(
+      { required bool isDarkTheme,
+        required BuildContext context,
+      })
+  {
+    return ThemeData();
   }
 }
