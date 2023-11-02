@@ -8,6 +8,7 @@ class MyTheme{
   {
     return ThemeData(
       scaffoldBackgroundColor: const Color(0xFF343541),
+      primarySwatch: Colors.purple
     );
   }
 }
