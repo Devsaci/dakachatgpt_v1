@@ -18,3 +18,4 @@ data management with Firebase.
 10. Implementing user-to-user chat using Firebase Cloud Firestore
 
 # 2. Starting up project
+# 3. Creating a theme
