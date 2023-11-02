@@ -11,7 +11,7 @@ data management with Firebase.
 3. Connecting the app to Firebase for user authentication and data management for both Android and IOS
 4. Implementing a chat screen with StreamBuilder and handling input messages
 5. Integrating ChatGPT and DALL-E for image generation and displaying the responses in the chat widget
-6. Adding text-to-speech and speech-to-text features using Elevenlabs API
+6. Adding text-to-speech and speech-to-text features using Eleven-labs API
 7. Building a post screen with grid view, like and comment functionality, and user-to-user chat
 8. Add a text-to-speech feature in the application using ElevenLabs API
 9. Configuring Firebase Firestore rules for secure data access
