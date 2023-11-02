@@ -16,3 +16,5 @@ data management with Firebase.
 8. Add a text-to-speech feature in the application using ElevenLabs API
 9. Configuring Firebase Firestore rules for secure data access
 10. Implementing user-to-user chat using Firebase Cloud Firestore
+
+# 2. Starting up project
