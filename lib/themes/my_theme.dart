@@ -6,9 +6,14 @@ class MyTheme{
         required BuildContext context,
       })
   {
-    return ThemeData(
-      scaffoldBackgroundColor: const Color(0xFF343541),
+    return isDarkTheme ?
+      ThemeData(
+      scaffoldBackgroundColor: const ²Color(0xFF343541),
       primarySwatch: Colors.purple
+    )
+    : ThemeData(
+        scaffoldBackgroundColor: Colors.grey.shade300,
+        primarySwatch: Colors.purple
     );
   }
 }
