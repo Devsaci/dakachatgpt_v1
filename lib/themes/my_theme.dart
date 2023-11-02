@@ -6,6 +6,8 @@ class MyTheme{
         required BuildContext context,
       })
   {
-    return ThemeData();
+    return ThemeData(
+      scaffoldBackgroundColor: const Color(0xFF343541),
+    );
   }
 }
