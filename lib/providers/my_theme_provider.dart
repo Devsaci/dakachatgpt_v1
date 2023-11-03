@@ -1,3 +1,4 @@
+import 'package:dakachatgpt_v1/constants/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -14,6 +15,6 @@ class MyThemeProvider extends ChangeNotifier {
 
   void saveThemeToSharedPreferences({required bool value}) async {
     final sharedPreferences = await SharedPreferences.getInstance();
-    sharedPreferences.setBool("themeStatus", value);
+    sharedPreferences.setBool(Constants.themeStatus, value);
   }
 }
