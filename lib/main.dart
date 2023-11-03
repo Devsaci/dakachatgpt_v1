@@ -8,7 +8,7 @@ void main() {
   runApp(MultiProvider(
       providers:
   [
-    ChangeNotifierProvider(create: (context) => MyThemeProvider()),
+    ChangeNotifierProvider(create: (_) => MyThemeProvider()),
   ],
   child: const MyApp()));
 }
