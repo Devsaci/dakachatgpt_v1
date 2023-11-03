@@ -8,7 +8,7 @@ class MyTheme{
   {
     return isDarkTheme ?
       ThemeData(
-      scaffoldBackgroundColor: const ²Color(0xFF343541),
+      scaffoldBackgroundColor: const Color(0xFF340000),
       primarySwatch: Colors.purple
     )
     : ThemeData(
