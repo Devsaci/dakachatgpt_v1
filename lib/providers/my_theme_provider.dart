@@ -9,11 +9,11 @@ class MyThemeProvider extends ChangeNotifier {
   set darkTheme(bool value) {
     _darkTheme = value;
     saveThemeToSharedPreferences(value: value);
+    notifyListeners();
   }
 
   void saveThemeToSharedPreferences({required bool value}) async {
     final sharedPreferences = await SharedPreferences.getInstance();
     sharedPreferences.setBool("themeStatus", value);
-    notifyListeners();
   }
 }
