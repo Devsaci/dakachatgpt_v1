@@ -13,8 +13,8 @@ class MyTheme{
         primaryColorDark: Colors.deepPurple,
         dividerColor: Colors.white,
         disabledColor: Colors.grey,
-
-
+        cardColor: const Color(0xFF444654),
+        canvasColor: Colors.black,
     )
     : ThemeData(
         scaffoldBackgroundColor: Colors.grey.shade300,
