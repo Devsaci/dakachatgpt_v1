@@ -10,14 +10,16 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-
-
   @override
   Widget build(BuildContext context) {
-     final themeStatus =   Provider.of<MyThemeProvider>(context);
-    return  Scaffold(
+    final themeStatus = Provider.of<MyThemeProvider>(context);
+    return Scaffold(
       appBar: AppBar(
-        title: const Text("Chat GPT"),
+        title: Text(
+          "Chat-GPT",
+          style: TextStyle(
+              color: themeStatus.themeType ? Colors.white : Colors.black),
+        ),
       ),
       body: const Center(child: Text("Home Screen")),
     );
