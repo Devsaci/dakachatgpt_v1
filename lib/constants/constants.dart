@@ -1,3 +1,5 @@
 
 
-class Constants {}
+class Constants {
+  static const themeStatus = "themeStatus";
+}
