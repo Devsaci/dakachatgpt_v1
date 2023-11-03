@@ -20,6 +20,13 @@ class _HomeScreenState extends State<HomeScreen> {
           style: TextStyle(
               color: themeStatus.themeType ? Colors.white : Colors.black),
         ),
+        actions: [
+          IconButton(
+              onPressed: () {},
+              icon:  Icon(
+                Icons.light_mode_outlined,
+              ))
+        ],
       ),
       body: const Center(child: Text("Home Screen")),
     );
