@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class MyThemeProvider extends ChangeNotifier{
   bool _darkTheme = false;
@@ -7,5 +8,6 @@ class MyThemeProvider extends ChangeNotifier{
 
   set darkTheme(bool value) {
     _darkTheme = value;
+    SharedPreferences.getInstance();
   }
 }
