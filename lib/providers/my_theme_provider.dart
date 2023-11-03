@@ -20,5 +20,6 @@ class MyThemeProvider extends ChangeNotifier {
 
   getThemeStatus() async {
     final SharedPreferences sharedPreferences = await SharedPreferences.getInstance();
+    sharedPreferences.getBool(Constants.themeStatus) ?? false;
   }
 }
