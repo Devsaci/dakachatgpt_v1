@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
         builder: (BuildContext context, value, Widget? child) {
       return MaterialApp(
         title: 'Chat_GPT with Flutter',
-        theme: MyTheme.themeData(isDarkTheme: true, context: context),
+        theme: MyTheme.themeData(isDarkTheme: value.themeType, context: context),
         home: const HomeScreen(),
       );
     });
