@@ -1,10 +1,15 @@
 import 'package:dakachatgpt_v1/main_screens/home_screen.dart';
+import 'package:dakachatgpt_v1/providers/my_theme_provider.dart';
 import 'package:dakachatgpt_v1/themes/my_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 void main() {
-  runApp(MultiProvider(providers: const [],
+  runApp(MultiProvider(
+      providers:
+  [
+    ChangeNotifierProvider(create: (context) => MyThemeProvider()),
+  ],
   child: const MyApp()));
 }
 
