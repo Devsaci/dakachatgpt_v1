@@ -1,9 +1,11 @@
 import 'package:dakachatgpt_v1/main_screens/home_screen.dart';
 import 'package:dakachatgpt_v1/themes/my_theme.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MultiProvider(providers: const [],
+  child: const MyApp()));
 }
 
 class MyApp extends StatelessWidget {
