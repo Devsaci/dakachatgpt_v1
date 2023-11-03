@@ -16,6 +16,7 @@ class MyTheme{
         cardColor: const Color(0xFF444654),
         canvasColor: Colors.black,
         brightness: Brightness.dark,
+        appBarTheme: const AppBarTheme(color: Color(0xFF444000)),
     )
     : ThemeData(
         scaffoldBackgroundColor: Colors.grey.shade300,
