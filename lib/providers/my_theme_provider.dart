@@ -8,11 +8,11 @@ class MyThemeProvider extends ChangeNotifier{
 
   set darkTheme(bool value)  {
     _darkTheme = value;
-       saveThemeToSharedPreferences(value);
+       saveThemeToSharedPreferences(value: value);
 
   }
 
-  void saveThemeToSharedPreferences(bool value) {
+  void saveThemeToSharedPreferences({required bool value}) {
     final SharedPreferences sharedPreferences = SharedPreferences.getInstance() as SharedPreferences;
         sharedPreferences.setBool("themeStatus", value);
   }
