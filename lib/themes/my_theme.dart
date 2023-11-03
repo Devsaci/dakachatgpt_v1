@@ -15,6 +15,7 @@ class MyTheme{
         disabledColor: Colors.grey,
         cardColor: const Color(0xFF444654),
         canvasColor: Colors.black,
+        brightness: Brightness.dark,
     )
     : ThemeData(
         scaffoldBackgroundColor: Colors.grey.shade300,
