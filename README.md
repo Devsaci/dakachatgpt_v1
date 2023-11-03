@@ -20,3 +20,4 @@ data management with Firebase.
 # 2. Starting up project
 # 3. Creating a theme
 # 4. Selecting a theme
+# 5. Saving the theme
