@@ -12,8 +12,8 @@ class MyThemeProvider extends ChangeNotifier{
 
   }
 
-  void saveThemeToSharedPreferences({required bool value}) {
-    final SharedPreferences sharedPreferences = SharedPreferences.getInstance() as SharedPreferences;
+  Future <void> saveThemeToSharedPreferences({required bool value}) async {
+    final sharedPreferences = await SharedPreferences.getInstance();
         sharedPreferences.setBool("themeStatus", value);
   }
 }
