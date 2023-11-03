@@ -7,7 +7,7 @@ class MyThemeProvider extends ChangeNotifier {
 
   bool get themeType => _darkTheme;
 
-  set darkTheme(bool value) {
+  set setTheme(bool value) {
     _darkTheme = value;
     saveThemeToSharedPreferences(value: value);
     notifyListeners();

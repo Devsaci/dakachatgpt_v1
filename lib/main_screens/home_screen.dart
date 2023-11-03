@@ -22,11 +22,20 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
         actions: [
           IconButton(
-              onPressed: () {},
-              icon:  Icon(
-                Icons.light_mode_outlined,
-                color: themeStatus.themeType ? Colors.white : Colors.black,
-              ))
+            onPressed: () {
+              if (themeStatus.themeType) {
+                themeStatus.setTheme = false;
+              } else {
+                themeStatus.setTheme = true;
+              }
+            },
+            icon: Icon(
+              themeStatus.themeType
+                  ? Icons.dark_mode_outlined
+                  : Icons.light_mode_outlined,
+              color: themeStatus.themeType ? Colors.white : Colors.black,
+            ),
+          ),
         ],
       ),
       body: const Center(child: Text("Home Screen")),
