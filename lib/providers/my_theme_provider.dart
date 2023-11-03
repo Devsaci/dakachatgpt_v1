@@ -6,8 +6,9 @@ class MyThemeProvider extends ChangeNotifier{
 
   bool get darkTheme => _darkTheme;
 
-  set darkTheme(bool value) {
+  set darkTheme(bool value)  {
     _darkTheme = value;
-    SharedPreferences.getInstance();
+       final SharedPreferences sharedPreferences = SharedPreferences.getInstance() as SharedPreferences;
+
   }
 }
