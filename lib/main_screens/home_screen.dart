@@ -25,6 +25,7 @@ class _HomeScreenState extends State<HomeScreen> {
               onPressed: () {},
               icon:  Icon(
                 Icons.light_mode_outlined,
+                color: themeStatus.themeType ? Colors.white : Colors.black,
               ))
         ],
       ),
