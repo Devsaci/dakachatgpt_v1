@@ -24,9 +24,10 @@ class _MyAppState extends State<MyApp> {
     super.initState();
   }
 
-  Future<void> getCurrentTheme() async =>
-      await Provider.of<MyThemeProvider>(context, listen: false)
+  Future<void> getCurrentTheme() async {
+    return await Provider.of<MyThemeProvider>(context, listen: false)
           .getThemeStatus();
+  }
   @override
   Widget build(BuildContext context) {
     return Consumer<MyThemeProvider>(

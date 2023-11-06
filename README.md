@@ -17,7 +17,13 @@ data management with Firebase.
 9. Configuring Firebase Firestore rules for secure data access
 10. Implementing user-to-user chat using Firebase Cloud Firestore
 
+
+# I. Setting up a new Flutter project and creating a custom theme for the app
 # 2. Starting up project
 # 3. Creating a theme
 # 4. Selecting a theme
 # 5. Saving the theme
+
+## Section 2 : Building the login and registration screen
+# II. Building login and registration screens, including OTP verification
+# 6. Adding Bottom navigation bar
