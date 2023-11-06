@@ -54,6 +54,8 @@ class _HomeScreenState extends State<HomeScreen> {
           BottomNavigationBarItem(icon: Icon(Icons.post_add), label: 'Posts',),
           BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Profile',),
         ],
+        // ignore: avoid_print
+        onTap: (index) => print ('Index  :  $index'),
       ),
     );
   }
