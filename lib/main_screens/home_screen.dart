@@ -1,4 +1,5 @@
 import 'package:dakachatgpt_v1/main_screens/posts_screen.dart';
+import 'package:dakachatgpt_v1/main_screens/profile_screen.dart';
 import 'package:dakachatgpt_v1/providers/my_theme_provider.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -18,6 +19,7 @@ class _HomeScreenState extends State<HomeScreen> {
   final List<Widget> tabs = [
     const AIChatScreen(),
     const PostsScreen(),
+    const ProfileScreen(),
   ];
 
   @override
@@ -51,9 +53,7 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ],
       ),
-      body: const Center(
-        child: Text("Home Screen"),
-      ),
+      body: tabs[selectedIndex],
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
         selectedItemColor: color,
