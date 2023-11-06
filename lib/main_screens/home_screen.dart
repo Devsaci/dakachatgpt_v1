@@ -12,6 +12,7 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   int selectedIndex = 0;
+  final List<Widget> tabs =[];
 
   @override
   Widget build(BuildContext context) {
@@ -54,25 +55,22 @@ class _HomeScreenState extends State<HomeScreen> {
         currentIndex: selectedIndex,
         items: const [
           BottomNavigationBarItem(icon: Icon(Icons.chat), label: 'A.I Chat'),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.post_add),
-            label: 'Posts',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.person),
-            label: 'Profile',
-          ),
+          BottomNavigationBarItem(icon: Icon(Icons.post_add), label: 'Posts'),
+          BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Profile')
         ],
-        // ignore: avoid_print
         onTap: (index) {
           setState(() {
             selectedIndex = index;
           });
-          if (kDebugMode) {
-            print('Index  :  $index');
-          }
+          kDebugModeIndex(index);
         },
       ),
     );
+  }
+
+  void kDebugModeIndex(int index) {
+    if (kDebugMode) {
+      print('Index  :  $index');
+    }
   }
 }
