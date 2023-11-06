@@ -45,7 +45,9 @@ class _HomeScreenState extends State<HomeScreen> {
         child: Text("Home Screen"),
       ),
       bottomNavigationBar: BottomNavigationBar(
-        items: [],
+        items: const [
+          BottomNavigationBarItem(icon: Icon(Icons.chat), label: 'A.I Chat'),
+        ],
       ),
     );
   }
