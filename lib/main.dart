@@ -20,7 +20,12 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   void initState(){
+    getCurrentTheme();
     super.initState();
+  }
+
+  void getCurrentTheme() {
+    Provider.of<MyThemeProvider>(context, listen: false).getThemeStatus();
   }
   @override
   Widget build(BuildContext context) {
