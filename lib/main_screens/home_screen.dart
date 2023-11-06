@@ -1,4 +1,5 @@
 import 'package:dakachatgpt_v1/providers/my_theme_provider.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -10,6 +11,8 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+  int selectedIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     final themeStatus = Provider.of<MyThemeProvider>(context);
@@ -47,15 +50,28 @@ class _HomeScreenState extends State<HomeScreen> {
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
         selectedItemColor: color,
-        selectedLabelStyle:const TextStyle(fontWeight: FontWeight.w800 ),
-        currentIndex: 0,
+        selectedLabelStyle: const TextStyle(fontWeight: FontWeight.w800),
+        currentIndex: selectedIndex,
         items: const [
           BottomNavigationBarItem(icon: Icon(Icons.chat), label: 'A.I Chat'),
-          BottomNavigationBarItem(icon: Icon(Icons.post_add), label: 'Posts',),
-          BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Profile',),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.post_add),
+            label: 'Posts',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.person),
+            label: 'Profile',
+          ),
         ],
         // ignore: avoid_print
-        onTap: (index) => print ('Index  :  $index'),
+        onTap: (index) {
+          setState(() {
+            selectedIndex = index;
+          });
+          if (kDebugMode) {
+            print('Index  :  $index');
+          }
+        },
       ),
     );
   }
