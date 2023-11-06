@@ -19,21 +19,22 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   @override
-  void initState(){
+  void initState() {
     getCurrentTheme();
     super.initState();
   }
 
-  Future<void> getCurrentTheme() async {
-    await Provider.of<MyThemeProvider>(context, listen: false).getThemeStatus();
-  }
+  Future<void> getCurrentTheme() async =>
+      await Provider.of<MyThemeProvider>(context, listen: false)
+          .getThemeStatus();
   @override
   Widget build(BuildContext context) {
     return Consumer<MyThemeProvider>(
         builder: (BuildContext context, value, Widget? child) {
       return MaterialApp(
         title: 'Chat_GPT with Flutter',
-        theme: MyTheme.themeData(isDarkTheme: value.themeType, context: context),
+        theme:
+            MyTheme.themeData(isDarkTheme: value.themeType, context: context),
         home: const HomeScreen(),
       );
     });
