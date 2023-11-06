@@ -48,6 +48,7 @@ class _HomeScreenState extends State<HomeScreen> {
         items: const [
           BottomNavigationBarItem(icon: Icon(Icons.chat), label: 'A.I Chat'),
           BottomNavigationBarItem(icon: Icon(Icons.post_add), label: 'Posts', ),
+          BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Profile', ),
         ],
       ),
     );
