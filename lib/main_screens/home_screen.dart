@@ -41,7 +41,12 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ],
       ),
-      body: const Center(child: Text("Home Screen")),
+      body: const Center(
+        child: Text("Home Screen"),
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        items: [],
+      ),
     );
   }
 }
