@@ -13,6 +13,8 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     final themeStatus = Provider.of<MyThemeProvider>(context);
+    themeStatus.themeType ? Colors.white : Colors.black;
+
     return Scaffold(
       appBar: AppBar(
         title: Text(
