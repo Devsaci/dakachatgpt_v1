@@ -48,6 +48,7 @@ class _HomeScreenState extends State<HomeScreen> {
         type: BottomNavigationBarType.fixed,
         selectedItemColor: color,
         selectedLabelStyle:const TextStyle(fontWeight: FontWeight.w800 ),
+        currentIndex: 0,
         items: const [
           BottomNavigationBarItem(icon: Icon(Icons.chat), label: 'A.I Chat'),
           BottomNavigationBarItem(icon: Icon(Icons.post_add), label: 'Posts',),
