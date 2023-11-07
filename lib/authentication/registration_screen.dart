@@ -53,9 +53,11 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                   controller: phoneController,
                   textInputAction: TextInputAction.done,
                   keyboardType: TextInputType.number,
-                  style:  const TextStyle(
+                  style: const TextStyle(
                       fontSize: 18, fontWeight: FontWeight.bold),
-                  decoration: const InputDecoration(),
+                  decoration: const InputDecoration(
+                    hintText: 'Enter phone number',
+                  ),
                 ),
               ],
             ),
