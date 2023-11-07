@@ -21,8 +21,9 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
             child: Column(
               children: [
                 Container(
-                  // height: 100,
-                  // width: 100,
+                  decoration: BoxDecoration(
+                    border: Border.all(color: Colors.black, width: 10),
+                  ),
                   child: const CircleAvatar(
                     radius: 100,
                     backgroundImage: AssetImage("assets/images/user_icon.png"),
