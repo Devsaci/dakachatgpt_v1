@@ -55,10 +55,12 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                   keyboardType: TextInputType.number,
                   style: const TextStyle(
                       fontSize: 18, fontWeight: FontWeight.bold),
-                  decoration: const InputDecoration(
+                  decoration:  InputDecoration(
                     hintText: 'Enter phone number',
-                    hintStyle: TextStyle(fontSize: 18),
-                    enabledBorder: OutlineInputBorder(),
+                    hintStyle: const TextStyle(fontSize: 18),
+                    enabledBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(10),
+                    ),
                   ),
                 ),
               ],
