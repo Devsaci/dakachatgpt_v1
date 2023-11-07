@@ -20,7 +20,11 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
           child: Center(
             child: Column(
               children: [
-                Container(),
+                Container(
+                  height: 100,
+                  width: 100,
+                  child: const CircleAvatar(),
+                ),
               ],
             ),
           ),
