@@ -37,6 +37,12 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                   'Register',
                   style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
                 ),
+                const SizedBox(height: 10),
+                const Text(
+                  'Add your phone number. I will send you a verification code.',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
+                ),
               ],
             ),
           ),
