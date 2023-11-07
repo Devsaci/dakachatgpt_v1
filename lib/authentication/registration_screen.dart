@@ -21,10 +21,11 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
             child: Column(
               children: [
                 Container(
-                  height: 100,
-                  width: 100,
+                  // height: 100,
+                  // width: 100,
                   child: const CircleAvatar(
-                    radius: 80,
+                    radius: 100,
+                    backgroundImage: AssetImage("assets/images/user_icon.png"),
                   ),
                 ),
               ],
