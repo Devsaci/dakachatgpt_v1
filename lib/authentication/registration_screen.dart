@@ -17,7 +17,11 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
             vertical: 10.0,
             horizontal: 10,
           ),
-          child: Center(child: Column()),
+          child: Center(
+            child: Column(
+              children: [],
+            ),
+          ),
         ),
       ),
     );
