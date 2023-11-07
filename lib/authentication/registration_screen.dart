@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../service/assets_manager.dart';
+
 class RegistrationScreen extends StatefulWidget {
   const RegistrationScreen({super.key});
 
@@ -25,9 +27,9 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                     border: Border.all(color: Colors.black, width: 3),
                     borderRadius: BorderRadius.circular(90),
                   ),
-                  child: const CircleAvatar(
+                  child: CircleAvatar(
                     radius: 80,
-                    backgroundImage: AssetImage("assets/images/user_icon.png"),
+                    backgroundImage: AssetImage(AssetsManager.userIcon),
                   ),
                 ),
               ],
