@@ -29,7 +29,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                   ),
                   child: CircleAvatar(
                     radius: 80,
-                    backgroundImage: AssetImage(AssetsManager.userIcon),
+                    backgroundImage: AssetImage(AssetsManager.openAILogo),
                   ),
                 ),
                 const SizedBox(height: 20),
@@ -46,6 +46,8 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                     style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
                   ),
                 ),
+                const SizedBox(height: 20),
+                TextFormField(),
               ],
             ),
           ),
