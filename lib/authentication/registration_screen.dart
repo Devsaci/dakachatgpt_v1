@@ -51,6 +51,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                 const SizedBox(height: 20),
                 TextFormField(
                   controller: phoneController,
+                  textInputAction: TextInputAction.done,
                 ),
               ],
             ),
