@@ -32,6 +32,11 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                     backgroundImage: AssetImage(AssetsManager.userIcon),
                   ),
                 ),
+                const SizedBox(height: 20),
+                const Text(
+                  'Register',
+                  style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+                ),
               ],
             ),
           ),
