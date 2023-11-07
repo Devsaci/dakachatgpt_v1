@@ -10,7 +10,7 @@ class RegistrationScreen extends StatefulWidget {
 class _RegistrationScreenState extends State<RegistrationScreen> {
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
+    return Scaffold(
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.symmetric(
@@ -23,7 +23,9 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                 Container(
                   height: 100,
                   width: 100,
-                  child: const CircleAvatar(),
+                  child: const CircleAvatar(
+                    radius: 80,
+                  ),
                 ),
               ],
             ),
