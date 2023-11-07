@@ -57,6 +57,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                   style: const TextStyle(
                       fontSize: 18, fontWeight: FontWeight.bold),
                   decoration:  InputDecoration(
+                    counterText: '',
                     hintText: 'Enter phone number',
                     hintStyle: const TextStyle(fontSize: 18),
                     enabledBorder: OutlineInputBorder(
