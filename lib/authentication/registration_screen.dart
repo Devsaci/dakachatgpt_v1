@@ -52,6 +52,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                 TextFormField(
                   controller: phoneController,
                   textInputAction: TextInputAction.done,
+                  keyboardType: TextInputType.number,
                 ),
               ],
             ),
