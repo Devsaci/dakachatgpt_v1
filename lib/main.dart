@@ -37,7 +37,8 @@ class _MyAppState extends State<MyApp> {
       return MaterialApp(
         title: 'Chat_GPT with Flutter',
         theme:
-            MyTheme.themeData(isDarkTheme: value.themeType, context: context),
+            // MyTheme.themeData(isDarkTheme: value.themeType, context: context),
+        MyTheme.themeData(isDarkTheme: false, context: context),
         home: const RegistrationScreen(),
       );
     });
