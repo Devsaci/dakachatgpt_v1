@@ -1,1 +1,3 @@
-class AssetsManager{}
+class AssetsManager{
+  static String ImagePath = "";
+}
