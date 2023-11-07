@@ -60,6 +60,8 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                     hintStyle: const TextStyle(fontSize: 18),
                     enabledBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(10),
+                      borderSide:
+                      const BorderSide(color: Colors.orangeAccent),
                     ),
                   ),
                 ),
