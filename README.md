@@ -27,3 +27,4 @@ data management with Firebase.
 ## Section 2 : Building the login and registration screen
 # II. Building login and registration screens, including OTP verification
 # 6. Adding Bottom navigation bar
+# 7. Login Packages and assets
