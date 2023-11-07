@@ -58,6 +58,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                   decoration: const InputDecoration(
                     hintText: 'Enter phone number',
                     hintStyle: TextStyle(fontSize: 18),
+                    enabledBorder: OutlineInputBorder(),
                   ),
                 ),
               ],
