@@ -82,7 +82,9 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                       borderSide: const BorderSide(color: Colors.orangeAccent),
                     ),
                     prefixIcon: Container(
-                      child: const InkWell(),
+                      child: InkWell(
+                        onTap: () {},
+                      ),
                     ),
                   ),
                 ),
