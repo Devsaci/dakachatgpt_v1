@@ -33,7 +33,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
           child: Center(
             child: Padding(
               padding:
-                  const EdgeInsets.symmetric(vertical: 10.0, horizontal: 10),
+                  const EdgeInsets.symmetric(vertical: 25.0, horizontal: 35),
               child: Column(
                 children: [
                   Container(
