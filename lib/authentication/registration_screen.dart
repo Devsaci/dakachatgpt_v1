@@ -56,14 +56,17 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                   keyboardType: TextInputType.number,
                   style: const TextStyle(
                       fontSize: 18, fontWeight: FontWeight.bold),
-                  decoration:  InputDecoration(
+                  decoration: InputDecoration(
                     counterText: '',
                     hintText: 'Enter phone number',
                     hintStyle: const TextStyle(fontSize: 18),
                     enabledBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(10),
-                      borderSide:
-                      const BorderSide(color: Colors.orangeAccent),
+                      borderSide: const BorderSide(color: Colors.orangeAccent),
+                    ),
+                    focusedBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(10),
+                      borderSide: const BorderSide(color: Colors.orangeAccent),
                     ),
                   ),
                 ),
