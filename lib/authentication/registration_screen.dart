@@ -87,7 +87,9 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                           showCountryPicker(
                             context: context,
                             onSelect: (value) {
-                              setState(() {});
+                              setState(() {
+                                selectedCountry = value;
+                              });
                             },
                           );
                         },
