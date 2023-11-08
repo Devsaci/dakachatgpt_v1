@@ -1,3 +1,4 @@
+import 'package:country_picker/country_picker.dart';
 import 'package:flutter/material.dart';
 
 import '../service/assets_manager.dart';
@@ -11,6 +12,18 @@ class RegistrationScreen extends StatefulWidget {
 
 class _RegistrationScreenState extends State<RegistrationScreen> {
   final TextEditingController phoneController = TextEditingController();
+  Country selectedCountry = Country(
+    phoneCode: '26',
+    countryCode: 'ZM',
+    e164Sc: 0,
+    geographic: true,
+    level: 1,
+    name: 'Zambia',
+    example: 'Zambia',
+    displayName: 'Zambia',
+    displayNameNoCountryCode: 'ZM',
+    e164Key: '',
+  );
 
   @override
   Widget build(BuildContext context) {
