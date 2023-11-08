@@ -13,15 +13,15 @@ class RegistrationScreen extends StatefulWidget {
 class _RegistrationScreenState extends State<RegistrationScreen> {
   final TextEditingController phoneController = TextEditingController();
   Country selectedCountry = Country(
-    phoneCode: '26',
-    countryCode: 'ZM',
+    phoneCode: '33',
+    countryCode: 'FR',
     e164Sc: 0,
     geographic: true,
     level: 1,
-    name: 'Zambia',
-    example: 'Zambia',
-    displayName: 'Zambia',
-    displayNameNoCountryCode: 'ZM',
+    name: 'France',
+    example: 'France',
+    displayName: 'France',
+    displayNameNoCountryCode: 'FR',
     e164Key: '',
   );
 
