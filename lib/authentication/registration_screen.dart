@@ -30,7 +30,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
       RoundedLoadingButtonController();
 @override
   void dispose() {
-    // TODO: implement dispose
+    phoneController.dispose();
     super.dispose();
   }
   @override
