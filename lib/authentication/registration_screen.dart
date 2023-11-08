@@ -31,6 +31,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
 @override
   void dispose() {
     phoneController.dispose();
+    btnController.stop();
     super.dispose();
   }
   @override
