@@ -28,12 +28,14 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
 
   final RoundedLoadingButtonController btnController =
       RoundedLoadingButtonController();
-@override
+
+  @override
   void dispose() {
     phoneController.dispose();
     btnController.stop();
     super.dispose();
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -124,6 +126,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                     child: RoundedLoadingButton(
                       controller: btnController,
                       onPressed: () {},
+                      successIcon: Icons.check,
                       child: const Text(
                         'Login',
                         style: TextStyle(
