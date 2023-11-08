@@ -83,7 +83,14 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                     ),
                     prefixIcon: Container(
                       child: InkWell(
-                        onTap: () {},
+                        onTap: () {
+                          showCountryPicker(
+                            context: context,
+                            onSelect: (value) {
+                              setState(() {});
+                            },
+                          );
+                        },
                       ),
                     ),
                   ),
