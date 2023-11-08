@@ -81,6 +81,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                       borderRadius: BorderRadius.circular(10),
                       borderSide: const BorderSide(color: Colors.orangeAccent),
                     ),
+                    prefixIcon: Container(),
                   ),
                 ),
               ],
