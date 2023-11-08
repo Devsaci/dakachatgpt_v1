@@ -99,9 +99,9 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                               },
                             );
                           },
-                          child: const Text(
-                            'Icon',
-                            style: TextStyle(
+                          child: Text(
+                            '${selectedCountry.flagEmoji} +${selectedCountry.phoneCode}',
+                            style: const TextStyle(
                                 fontSize: 18, fontWeight: FontWeight.bold),
                           ),
                         ),
