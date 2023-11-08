@@ -128,6 +128,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                       onPressed: () {},
                       successIcon: Icons.check,
                       successColor: Colors.green,
+                      errorColor: Colors.red,
                       child: const Text(
                         'Login',
                         style: TextStyle(
