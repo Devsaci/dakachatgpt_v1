@@ -22,6 +22,9 @@ class _OTPScreenState extends State<OTPScreen> {
                 children: [
                   const SizedBox(height: 50),
                   Container(
+                    decoration: BoxDecoration(
+                        border: Border.all(color: Colors.black, width: 3),
+                        borderRadius: BorderRadius.circular(90)),
                     child: CircleAvatar(
                       radius: 80,
                       backgroundImage: AssetImage(AssetsManager.openAILogo),
