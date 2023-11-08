@@ -29,75 +29,87 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: Padding(
-          padding: const EdgeInsets.symmetric(
-            vertical: 10.0,
-            horizontal: 10,
-          ),
+        child: SingleChildScrollView(
           child: Center(
-            child: Column(
-              children: [
-                Container(
-                  decoration: BoxDecoration(
-                    border: Border.all(color: Colors.black, width: 3),
-                    borderRadius: BorderRadius.circular(90),
-                  ),
-                  child: CircleAvatar(
-                    radius: 80,
-                    backgroundImage: AssetImage(AssetsManager.openAILogo),
-                  ),
-                ),
-                const SizedBox(height: 20),
-                const Text(
-                  'Register',
-                  style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
-                ),
-                const SizedBox(height: 10),
-                const Padding(
-                  padding: EdgeInsets.all(15.0),
-                  child: Text(
-                    'Add your phone number. I will send you a verification code.',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
-                  ),
-                ),
-                const SizedBox(height: 20),
-                TextFormField(
-                  controller: phoneController,
-                  maxLength: 10,
-                  textInputAction: TextInputAction.done,
-                  keyboardType: TextInputType.number,
-                  style: const TextStyle(
-                      fontSize: 18, fontWeight: FontWeight.bold),
-                  decoration: InputDecoration(
-                    counterText: '',
-                    hintText: 'Enter phone number',
-                    hintStyle: const TextStyle(fontSize: 18),
-                    enabledBorder: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(10),
-                      borderSide: const BorderSide(color: Colors.orangeAccent),
+            child: Padding(
+              padding:
+                  const EdgeInsets.symmetric(vertical: 10.0, horizontal: 10),
+              child: Column(
+                children: [
+                  Container(
+                    decoration: BoxDecoration(
+                      border: Border.all(color: Colors.black, width: 3),
+                      borderRadius: BorderRadius.circular(90),
                     ),
-                    focusedBorder: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(10),
-                      borderSide: const BorderSide(color: Colors.orangeAccent),
+                    child: CircleAvatar(
+                      radius: 80,
+                      backgroundImage: AssetImage(AssetsManager.openAILogo),
                     ),
-                    prefixIcon: Container(
-                      child: InkWell(
-                        onTap: () {
-                          showCountryPicker(
-                            context: context,
-                            onSelect: (value) {
-                              setState(() {
-                                selectedCountry = value;
-                              });
-                            },
-                          );
-                        },
+                  ),
+                  const SizedBox(height: 20),
+                  const Text(
+                    'Register',
+                    style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+                  ),
+                  const SizedBox(height: 10),
+                  const Padding(
+                    padding: EdgeInsets.all(15.0),
+                    child: Text(
+                      'Add your phone number. I will send you a verification code.',
+                      textAlign: TextAlign.center,
+                      style:
+                          TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
+                    ),
+                  ),
+                  const SizedBox(height: 20),
+                  TextFormField(
+                    controller: phoneController,
+                    maxLength: 10,
+                    textInputAction: TextInputAction.done,
+                    keyboardType: TextInputType.number,
+                    style: const TextStyle(
+                        fontSize: 18, fontWeight: FontWeight.bold),
+                    decoration: InputDecoration(
+                      counterText: '',
+                      hintText: 'Enter phone number',
+                      hintStyle: const TextStyle(fontSize: 18),
+                      enabledBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(10),
+                        borderSide:
+                            const BorderSide(color: Colors.orangeAccent),
+                      ),
+                      focusedBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(10),
+                        borderSide:
+                            const BorderSide(color: Colors.orangeAccent),
+                      ),
+                      prefixIcon: Container(
+                        padding:
+                            const EdgeInsets.fromLTRB(8.0, 12.0, 8.0, 12.0),
+                        child: InkWell(
+                          onTap: () {
+                            showCountryPicker(
+                              context: context,
+                              countryListTheme: const CountryListThemeData(
+                                  bottomSheetHeight: 500),
+                              onSelect: (value) {
+                                setState(() {
+                                  selectedCountry = value;
+                                });
+                              },
+                            );
+                          },
+                          child: const Text(
+                            'Icon',
+                            style: TextStyle(
+                                fontSize: 18, fontWeight: FontWeight.bold),
+                          ),
+                        ),
                       ),
                     ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
           ),
         ),
