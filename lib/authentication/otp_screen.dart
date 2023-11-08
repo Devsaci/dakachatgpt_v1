@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../service/assets_manager.dart';
+
 class OTPScreen extends StatefulWidget {
   const OTPScreen({super.key});
 
@@ -10,13 +12,23 @@ class OTPScreen extends StatefulWidget {
 class _OTPScreenState extends State<OTPScreen> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: SafeArea(
         child: SingleChildScrollView(
           child: Center(
             child: Padding(
               padding: EdgeInsets.symmetric(vertical: 25.0, horizontal: 35),
-              child: Column(children: []),
+              child: Column(
+                children: [
+                  const SizedBox(height: 50),
+                  Container(
+                    child: CircleAvatar(
+                      radius: 80,
+                      backgroundImage: AssetImage(AssetsManager.openAILogo),
+                    ),
+                  ),
+                ],
+              ),
             ),
           ),
         ),
