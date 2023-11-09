@@ -1,9 +1,11 @@
 
-import 'package:dakachatgpt_v1/authentication/registration_screen.dart';
+// import 'package:dakachatgpt_v1/authentication/registration_screen.dart';
 import 'package:dakachatgpt_v1/providers/my_theme_provider.dart';
 import 'package:dakachatgpt_v1/themes/my_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+
+import 'authentication/user_information_screen.dart';
 
 
 void main() {
@@ -40,7 +42,8 @@ class _MyAppState extends State<MyApp> {
             // MyTheme.themeData(isDarkTheme: value.themeType, context: context),
         MyTheme.themeData(isDarkTheme: false, context: context),
         // home: const OTPScreen(),
-        home: const RegistrationScreen(),
+        // home: const RegistrationScreen(),
+        home: const UserInformationScreen(),
       );
     });
   }
