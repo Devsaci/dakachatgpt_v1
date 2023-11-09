@@ -73,6 +73,7 @@ class _UserInformationScreenState extends State<UserInformationScreen> {
                           textEditingController: nameController,
                           hintText: 'Enter your name',
                           textInputType: TextInputType.name,
+                          icon: Icons.account_circle,
                         ),
                         const SizedBox(height: 20),
                         // textFormFields 'Enter your phone number'
@@ -81,6 +82,7 @@ class _UserInformationScreenState extends State<UserInformationScreen> {
                           textEditingController: phoneController,
                           hintText: 'Enter your phone number',
                           textInputType: TextInputType.phone,
+                          icon: Icons.phone,
                         ),
                       ],
                     ),
@@ -118,6 +120,7 @@ class _UserInformationScreenState extends State<UserInformationScreen> {
 
   TextFormField myTextFormField({
     required bool enabled,
+    required IconData icon,
     required TextEditingController textEditingController,
     required String hintText,
     required TextInputType textInputType,
@@ -126,6 +129,7 @@ class _UserInformationScreenState extends State<UserInformationScreen> {
       enabled: enabled,
       controller: textEditingController,
       decoration: InputDecoration(
+        prefixIcon: Icon(icon,size: 30,color: Colors.black,),
         hintText: hintText,
       ),
     );
