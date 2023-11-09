@@ -76,8 +76,18 @@ class _UserInformationScreenState extends State<UserInformationScreen> {
                     height: 50,
                     child: RoundedLoadingButton(
                       controller: btnController,
+                      successIcon: Icons.check,
+                      successColor: Colors.green,
+                      errorColor: Colors.red,
+                      color: Colors.deepPurple,
                       onPressed: () {},
-                      child: const Text("Continue"),
+                      child: const Text(
+                        'Continue',
+                        style: TextStyle(
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold,
+                            letterSpacing: 1.5),
+                      ),
                     ),
                   )
                 ],
