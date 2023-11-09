@@ -62,11 +62,13 @@ class _UserInformationScreenState extends State<UserInformationScreen> {
                   const SizedBox(height: 20),
                   // textFormFields
                   Container(
-                    child: const Column(children: [
-                      // textFormFields 'Enter your name'
-                      SizedBox(height: 20),
-                      // textFormFields 'Enter your phone number'
-                    ]),
+                    child: Column(
+                      children: [
+                        TextFormField(),
+                        const SizedBox(height: 20),
+                        // textFormFields 'Enter your phone number'
+                      ],
+                    ),
                   ),
                   const SizedBox(height: 20),
                   const SizedBox(height: 30),
@@ -89,7 +91,7 @@ class _UserInformationScreenState extends State<UserInformationScreen> {
                             letterSpacing: 1.5),
                       ),
                     ),
-                  )
+                  ),
                 ],
               ),
             ),
