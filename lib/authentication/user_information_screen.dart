@@ -27,9 +27,17 @@ class _UserInformationScreenState extends State<UserInformationScreen> {
                     backgroundImage: AssetImage(AssetsManager.userIcon),
                   ),
                   Container(
-                    child: IconButton(
-                      onPressed: () {},
-                      icon: const Icon(Icons.camera_alt, color: Colors.white),
+                    decoration: BoxDecoration(
+                      color: Colors.deepPurple,
+                      border: Border.all(width: 2, color: Colors.white),
+                      borderRadius: const BorderRadius.all(Radius.circular(35)),
+                    ),
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(16),
+                      child: IconButton(
+                        onPressed: () {},
+                        icon: const Icon(Icons.camera_alt, color: Colors.white),
+                      ),
                     ),
                   ),
                 ],
