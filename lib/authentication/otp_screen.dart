@@ -35,6 +35,20 @@ class _OTPScreenState extends State<OTPScreen> {
                     'Verification',
                     style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
                   ),
+                  const SizedBox(
+                    height: 10,
+                  ),
+                  const Text(
+                    'Enter the OPT code sent to your phone number',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontSize: 14,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  const SizedBox(
+                    height: 20,
+                  ),
                 ],
               ),
             ),
