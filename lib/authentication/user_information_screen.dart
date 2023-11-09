@@ -13,7 +13,7 @@ class _UserInformationScreenState extends State<UserInformationScreen> {
   final RoundedLoadingButtonController btnController =
       RoundedLoadingButtonController();
 
-  late final TextEditingController  textEditingController;
+  late final TextEditingController textEditingController;
 
   @override
   Widget build(BuildContext context) {
@@ -66,9 +66,7 @@ class _UserInformationScreenState extends State<UserInformationScreen> {
                   Container(
                     child: Column(
                       children: [
-                        TextFormField(
-                          controller: textEditingController,
-                        ),
+                        myTextFormField(),
                         const SizedBox(height: 20),
                         // textFormFields 'Enter your phone number'
                       ],
@@ -102,6 +100,12 @@ class _UserInformationScreenState extends State<UserInformationScreen> {
           ),
         ),
       ),
+    );
+  }
+
+  TextFormField myTextFormField() {
+    return TextFormField(
+      controller: textEditingController,
     );
   }
 }
