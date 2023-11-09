@@ -70,11 +70,13 @@ class _UserInformationScreenState extends State<UserInformationScreen> {
                         // textFormFields 'Enter your name'
                         myTextFormField(
                           textEditingController: nameController,
+                          hintText: 'Enter your name',
                         ),
                         const SizedBox(height: 20),
                         // textFormFields 'Enter your phone number'
                         myTextFormField(
                           textEditingController: phoneController,
+                          hintText: 'Enter your phone number',
                         ),
                       ],
                     ),
@@ -112,9 +114,13 @@ class _UserInformationScreenState extends State<UserInformationScreen> {
 
   TextFormField myTextFormField({
     required TextEditingController textEditingController,
+    required String hintText,
   }) {
     return TextFormField(
       controller: textEditingController,
+      decoration: InputDecoration(
+        hintText: hintText,
+      ),
     );
   }
 }
