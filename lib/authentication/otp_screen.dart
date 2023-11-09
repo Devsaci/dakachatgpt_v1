@@ -18,7 +18,8 @@ class _OTPScreenState extends State<OTPScreen> {
         child: SingleChildScrollView(
           child: Center(
             child: Padding(
-              padding: const EdgeInsets.symmetric(vertical: 25.0, horizontal: 35),
+              padding:
+                  const EdgeInsets.symmetric(vertical: 25.0, horizontal: 35),
               child: Column(
                 children: [
                   const SizedBox(height: 50),
@@ -46,6 +47,7 @@ class _OTPScreenState extends State<OTPScreen> {
                   const Pinput(
                     length: 6,
                     showCursor: true,
+                    defaultPinTheme: PinTheme(),
                   ),
                 ],
               ),
