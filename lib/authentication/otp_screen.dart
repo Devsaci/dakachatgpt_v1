@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pinput/pinput.dart';
 
 import '../service/assets_manager.dart';
 
@@ -17,7 +18,7 @@ class _OTPScreenState extends State<OTPScreen> {
         child: SingleChildScrollView(
           child: Center(
             child: Padding(
-              padding: EdgeInsets.symmetric(vertical: 25.0, horizontal: 35),
+              padding: const EdgeInsets.symmetric(vertical: 25.0, horizontal: 35),
               child: Column(
                 children: [
                   const SizedBox(height: 50),
@@ -35,20 +36,14 @@ class _OTPScreenState extends State<OTPScreen> {
                     'Verification',
                     style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
                   ),
-                  const SizedBox(
-                    height: 10,
-                  ),
+                  const SizedBox(height: 10),
                   const Text(
                     'Enter the OPT code sent to your phone number',
                     textAlign: TextAlign.center,
-                    style: TextStyle(
-                      fontSize: 14,
-                      fontWeight: FontWeight.bold,
-                    ),
+                    style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
                   ),
-                  const SizedBox(
-                    height: 20,
-                  ),
+                  const SizedBox(height: 20),
+                  const Pinput(),
                 ],
               ),
             ),
