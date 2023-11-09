@@ -43,7 +43,9 @@ class _OTPScreenState extends State<OTPScreen> {
                     style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
                   ),
                   const SizedBox(height: 20),
-                  const Pinput(),
+                  const Pinput(
+                    length: 6,
+                  ),
                 ],
               ),
             ),
