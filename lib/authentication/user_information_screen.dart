@@ -19,37 +19,58 @@ class _UserInformationScreenState extends State<UserInformationScreen> {
           padding: const EdgeInsets.symmetric(vertical: 25.0, horizontal: 35),
           child: Column(
             children: [
-              Stack(
-                children: [
-                  CircleAvatar(
-                    radius: 60,
-                    backgroundColor: Colors.deepPurple,
-                    backgroundImage: AssetImage(AssetsManager.userIcon),
-                  ),
-                  Positioned(
-                    bottom: 0,
-                    right: 0,
-                    child: Container(
-                      decoration: BoxDecoration(
-                        color: Colors.deepPurple,
-                        border: Border.all(width: 2, color: Colors.white),
-                        borderRadius: const BorderRadius.all(Radius.circular(35)),
-                      ),
-                      child: ClipRRect(
-                        borderRadius: BorderRadius.circular(16),
-                        child: IconButton(
-                          onPressed: () {},
-                          icon: const Icon(Icons.camera_alt, color: Colors.white),
+              // Stack : CircleAvatar & Positioned IconButton
+              Center(
+                child: Stack(
+                  children: [
+                    // CircleAvatar
+                    CircleAvatar(
+                      radius: 60,
+                      backgroundColor: Colors.deepPurple,
+                      backgroundImage: AssetImage(AssetsManager.userIcon),
+                    ),
+                    // CircleAvatar
+                    Positioned(
+                      bottom: 0,
+                      right: 0,
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: Colors.deepPurple,
+                          border:
+                              Border.all(width: 2, color: Colors.yellowAccent),
+                          borderRadius:
+                              const BorderRadius.all(Radius.circular(35)),
+                        ),
+                        child: ClipRRect(
+                          borderRadius: BorderRadius.circular(16),
+                          child: IconButton(
+                            onPressed: () {},
+                            icon: const Icon(Icons.camera_alt,
+                                color: Colors.white),
+                          ),
                         ),
                       ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
+              const SizedBox(height: 20),
+              // textFormFields
+              Container(child: const Column(children: [
+                // textFormFields 'Enter your name'
+                SizedBox(height: 20),
+                // textFormFields 'Enter your phone number'
+              ]),),
+              const SizedBox(height: 20),
+              const SizedBox(height: 30),
+              // RoundedLoadingButton 'Continue'
+              const SizedBox(height: 50),
             ],
           ),
-        )),
-      )),
+        ),
+        ),
+      ),
+      ),
     );
   }
 }
