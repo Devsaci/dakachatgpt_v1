@@ -1,4 +1,5 @@
 import 'package:country_picker/country_picker.dart';
+import 'package:dakachatgpt_v1/authentication/otp_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:rounded_loading_button/rounded_loading_button.dart';
 
@@ -125,7 +126,13 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                     height: 50,
                     child: RoundedLoadingButton(
                       controller: btnController,
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const OTPScreen(),
+                            ));
+                      },
                       successIcon: Icons.check,
                       successColor: Colors.green,
                       errorColor: Colors.red,

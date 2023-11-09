@@ -1,11 +1,10 @@
-// import 'package:dakachatgpt_v1/main_screens/home_screen.dart';
+
+import 'package:dakachatgpt_v1/authentication/registration_screen.dart';
 import 'package:dakachatgpt_v1/providers/my_theme_provider.dart';
 import 'package:dakachatgpt_v1/themes/my_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import 'authentication/otp_screen.dart';
-// import 'authentication/registration_screen.dart';
 
 void main() {
   runApp(MultiProvider(providers: [
@@ -40,7 +39,8 @@ class _MyAppState extends State<MyApp> {
         theme:
             // MyTheme.themeData(isDarkTheme: value.themeType, context: context),
         MyTheme.themeData(isDarkTheme: false, context: context),
-        home: const OTPScreen(),
+        // home: const OTPScreen(),
+        home: const RegistrationScreen(),
       );
     });
   }
