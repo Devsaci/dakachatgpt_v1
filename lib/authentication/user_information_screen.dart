@@ -11,7 +11,7 @@ class UserInformationScreen extends StatefulWidget {
 
 class _UserInformationScreenState extends State<UserInformationScreen> {
   final RoundedLoadingButtonController btnController =
-  RoundedLoadingButtonController();
+      RoundedLoadingButtonController();
 
   final TextEditingController nameController = TextEditingController();
   final TextEditingController phoneController = TextEditingController();
@@ -24,7 +24,7 @@ class _UserInformationScreenState extends State<UserInformationScreen> {
           child: Center(
             child: Padding(
               padding:
-              const EdgeInsets.symmetric(vertical: 25.0, horizontal: 35),
+                  const EdgeInsets.symmetric(vertical: 25.0, horizontal: 35),
               child: Column(
                 children: [
                   // Stack : CircleAvatar & Positioned IconButton
@@ -47,7 +47,7 @@ class _UserInformationScreenState extends State<UserInformationScreen> {
                               border: Border.all(
                                   width: 2, color: Colors.yellowAccent),
                               borderRadius:
-                              const BorderRadius.all(Radius.circular(35)),
+                                  const BorderRadius.all(Radius.circular(35)),
                             ),
                             child: ClipRRect(
                               borderRadius: BorderRadius.circular(16),
@@ -69,13 +69,15 @@ class _UserInformationScreenState extends State<UserInformationScreen> {
                       children: [
                         // textFormFields 'Enter your name'
                         myTextFormField(
-                            textEditingController: nameController,
-                            hintText: 'Enter your name',
+                          enabled: true,
+                          textEditingController: nameController,
+                          hintText: 'Enter your name',
                           textInputType: TextInputType.name,
                         ),
                         const SizedBox(height: 20),
                         // textFormFields 'Enter your phone number'
                         myTextFormField(
+                          enabled: true,
                           textEditingController: phoneController,
                           hintText: 'Enter your phone number',
                           textInputType: TextInputType.phone,
@@ -115,11 +117,13 @@ class _UserInformationScreenState extends State<UserInformationScreen> {
   }
 
   TextFormField myTextFormField({
+    required bool enabled,
     required TextEditingController textEditingController,
     required String hintText,
     required TextInputType textInputType,
   }) {
     return TextFormField(
+      enabled: enabled,
       controller: textEditingController,
       decoration: InputDecoration(
         hintText: hintText,
