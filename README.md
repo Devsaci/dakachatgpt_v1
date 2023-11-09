@@ -31,3 +31,4 @@ data management with Firebase.
 # 8. Registration screen part 1
 # 9. Registration screen part 2
 # 10. OTP screen UI
+# 11. User information screen
