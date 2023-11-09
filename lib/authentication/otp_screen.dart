@@ -45,6 +45,7 @@ class _OTPScreenState extends State<OTPScreen> {
                   const SizedBox(height: 20),
                   const Pinput(
                     length: 6,
+                    showCursor: true,
                   ),
                 ],
               ),
